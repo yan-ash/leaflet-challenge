@@ -1,5 +1,4 @@
 // Creating the map object
-// Creating the map object
 let myMap = L.map("map", {
   center: [40.7, -73.95],
   zoom: 3,
@@ -13,7 +12,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 let url =
   "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
-
+// get the data with d3
 d3.json(url).then(function (data) {
   console.log(data);
 
@@ -52,12 +51,14 @@ d3.json(url).then(function (data) {
     }
     return color;
   }
+  // create a layer
 
   L.geoJSON(data, {
     pointToLayer: function (feature, latlng) {
       return L.circleMarker(latlng);
     },
     style: styleInfo,
+    // binding a popup to each layer
 
     onEachFeature: function (feature, layer) {
       layer.bindPopup(
@@ -70,6 +71,8 @@ d3.json(url).then(function (data) {
       );
     },
   }).addTo(myMap);
+
+  // set up the info lengend
 
   let info = L.control({ position: "bottomright" });
   info.onAdd = function () {
@@ -96,6 +99,6 @@ d3.json(url).then(function (data) {
 
     return div;
   };
-
+  // adding info legend to the map
   info.addTo(myMap);
 });
