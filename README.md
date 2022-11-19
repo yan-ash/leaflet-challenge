@@ -1,4 +1,4 @@
-# leaflet-challenge-Earthquark
+# leaflet-challenge-Earthquake
 
 [link](https://yan-ash.github.io/leaflet-challenge/)
 
