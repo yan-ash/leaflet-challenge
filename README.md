@@ -32,7 +32,7 @@ This challenge uses both HTML and Javascript to create custom map marker with le
 
 ![part1-img](img/part1.png)
 
-1.  Part 2: Gather and Plot more Data
+2.  Part 2: Gather and Plot more Data
 
 - plot the tectonic plates dataset on the map.
   ![part3-img](img/part3.png)
