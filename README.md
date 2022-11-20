@@ -34,15 +34,10 @@ This challenge uses both HTML and Javascript to create custom map marker with le
 
 1.  Part 2: Gather and Plot more Data
 
-<<<<<<< HEAD
 - plot the tectonic plates dataset on the map.
-  ![part3-img](img/part2.png)
-=======
-- plot the tectonic plates dataset on the map. when you click the plate border, it shows you the plate details.
-  ![part2-img](img/part2.png)
->>>>>>> 53ae2bfad2cd538e058dde3d669c71b672dcc126
+  ![part3-img](img/part3.png)
 - add topographic map and street map to choose from
-  ![part2-img](img/part3.png)
+  ![part2-img](img/part2.png)
 
 3. Deploy the website
    https://yan-ash.github.io/leaflet-challenge/
